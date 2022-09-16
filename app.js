@@ -21,3 +21,7 @@ app.get("/", (req, res) => {
 app.get("/semester", (req, res) => {
   res.render("semester", { title: "semester" });
 });
+
+app.get("/marks", (req, res) => {
+  res.render("marks", { title: "marks" });
+});
