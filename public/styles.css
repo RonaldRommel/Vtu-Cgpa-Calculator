@@ -1,24 +1,37 @@
-/* HOMEPAGE */
-body{
-     background-image: url(background.jpg); 
+/*--------------------------------------------------------- HOMEPAGE ------------------------------------------------------------------*/
+body {
+  background-image: url(background.jpg);
 }
-.sgpa_cgpa_link{
-    text-align: center;
-    margin:100px 50px 0 0 ;
-}
-.signup_login_link{
-    text-align: center;
-    margin: 50px;
-}
-.sgpa_calculator_link:hover{
-    color:aliceblue;
+.sgpa_cgpa_link {
+  color: purple;
+  text-align: center;
+  margin: 100px 50px 0 0;
+  text-decoration: none;
 }
 
+.signup_login_link {
+  text-align: center;
+  margin: 50px;
+}
+.sgpa_link {
+  color: purple;
+}
 
-/* SEMESTER */
-.semester_list{
-    /* border:2px solid black; */
-    text-align: center;
-    margin: 70px 150px 0 150px;
-    padding:25px 0 25px 0; 
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------------- SEMESTER --------------------------------------------------*/
+.semester_list {
+  /* border:2px solid black; */
+  text-align: center;
+  margin: 70px 150px 0 150px;
+  padding: 25px 0 25px 0;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: 0px;
 }
