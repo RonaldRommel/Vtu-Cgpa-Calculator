@@ -1,0 +1,15 @@
+body {
+    background-image: url(background.jpg);
+  }
+.cgpa_calculator {
+  
+  text-align: center;
+  margin: 50px 150px 0 150px;
+  padding: 25px 0 25px 0;
+ 
+}
+
+.c1c1:hover,.c1s2:hover,.c1s3:hover,.c1s4:hover,.c1s5:hover,.c1s6:hover,.c1s7:hover,.c1s8:hover,.c1cgpa:hover,
+.c1per:hover{
+color:rgb(230, 93, 164);
+}
