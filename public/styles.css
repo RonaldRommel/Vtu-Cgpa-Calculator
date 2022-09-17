@@ -27,11 +27,26 @@ a:link {
 .semester_list {
   /* border:2px solid black; */
   text-align: center;
-  margin: 70px 150px 0 150px;
+  margin: 50px 150px 0 150px;
   padding: 25px 0 25px 0;
+ 
 }
 
 .list-group-item {
   background-color: transparent;
   border: 0px;
+}
+/*--------------------------------------------------------------------- MARKS --------------------------------------------------*/
+
+.marks_list {
+  /* border:2px solid black; */
+  text-align: center;
+  margin: 50px 150px 0 150px;
+  padding: 25px 0 25px 0;
+ 
+}
+
+.s1s1:hover,.s1s2:hover,.s1s3:hover,.s1s4:hover,.s1s5:hover,.s1s6:hover,.s1s7:hover,.s1s8:hover,.s1sgpa:hover,
+.s1per:hover{
+color:rgb(230, 93, 164);
 }

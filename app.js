@@ -25,3 +25,6 @@ app.get("/semester", (req, res) => {
 app.get("/marks", (req, res) => {
   res.render("marks", { title: "marks" });
 });
+app.get("/cgpa", (req, res) => {
+  res.render("cgpa", { title: "cgpa" });
+});
