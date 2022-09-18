@@ -18,11 +18,18 @@ app.get("/", (req, res) => {
   res.render("homepage", { title: "home" });
 });
 
+app.get("/signup", (req, res) => {
+  res.render("signup", { title: "signup" });
+});
+app.get("/login", (req, res) => {
+  res.render("login", { title: "login" });
+});
+
 app.get("/semester", (req, res) => {
   res.render("semester", { title: "semester" });
 });
 
-app.get("/marks", (req, res) => {
+app.get("/semester/marks", (req, res) => {
   res.render("marks", { title: "marks" });
 });
 app.get("/cgpa", (req, res) => {
