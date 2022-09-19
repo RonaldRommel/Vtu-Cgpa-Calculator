@@ -54,7 +54,7 @@ app.get("/semester/semc", (req, res) => {
     "18EGH18/28(ENGLISH)",
   ];
   console.log("called");
-  res.cookie("subjects", ["1st and 2nd Sem (chemistry group)", subs], {
+  res.cookie("subjects", ["1st and 2nd sem (chemistry group)", subs], {
     httpOnly: true,
   });
   res.redirect("/semester/marks");
@@ -71,7 +71,7 @@ app.get("/semester/semp", (req, res) => {
     "18ELEL17/27",
     "18EGH18/28(ENGLISH)",
   ];
-  res.cookie("subjects", ["1st and 2nd Sem (Physics Group)", subs], {
+  res.cookie("subjects", ["1st and 2nd sem (physics group)", subs], {
     httpOnly: true,
   });
   res.redirect("/semester/marks");
@@ -89,7 +89,7 @@ app.get("/semester/sem3o4", (req, res) => {
     "18**L38/48",
     "18CPC39/49 or Kannada",
   ];
-  res.cookie("subjects", ["3rd or 4th Semester", subs], { httpOnly: true });
+  res.cookie("subjects", ["3rd and 4th Semester", subs], { httpOnly: true });
   res.redirect("/semester/marks");
 });
 

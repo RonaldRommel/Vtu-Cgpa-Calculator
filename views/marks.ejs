@@ -7,9 +7,17 @@
         <center>
           <h2><i><%= sem%></i></h2>
           <br />
-          <% subjects.forEach(sub=>{%><label for="c1s1"><%=sub%></label>
-          <input type="number" id="s3" max="100" min="0" /><br /><br /><% }) %>
-          <button class="btn btn-sm btn-outline-primary">Calculate</button>
+          <%var x=0; subjects.forEach(sub=>{%><label for="<%=++x%>"
+            ><%=sub%></label
+          >
+          <input type="number" id="<%=x%>" max="100" min="0" /><br /><br /><% })
+          %>
+          <button
+            class="btn btn-sm btn-outline-primary"
+            onclick="cal_sgpa('<%= sem%>')"
+          >
+            Calculate
+          </button>
           <input
             type="reset"
             class="btn btn-sm btn-outline-danger"

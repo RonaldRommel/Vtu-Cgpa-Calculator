@@ -50,3 +50,16 @@ a:link {
 .s1per:hover{
 color:rgb(230, 93, 164);
 }
+
+/*--------------------------------------------------------------------- SIGNUP --------------------------------------------------*/
+
+.signup_page,.login_page {
+  
+  text-align: center;
+  margin: 50px 150px 0 150px;
+  padding: 25px 0 25px 0;
+ 
+}
+.signup_header:hover,.login_header:hover{
+color:rgb(230, 100, 206);
+}
