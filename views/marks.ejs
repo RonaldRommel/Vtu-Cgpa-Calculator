@@ -4,7 +4,7 @@
   <body>
     <div class="container">
       <div class="cgpa_calculator align-items-center">
-        <center>
+        <center><form action="">
           <h2><i><%= sem%></i></h2>
           <br />
           <%var x=0; subjects.forEach(sub=>{%><label for="<%=++x%>"
@@ -24,13 +24,9 @@
           /><br /><br />
           <div class="row justify-content-center">
             <div class="col-md-3 mt-2">
-              <label for="c1cgpa" class="c1cgpa">CGPA</label>
-              <input type="text" id="c1cgpa" />
-            </div>
-            <div class="col-md-3 mt-2">
-              <label for="c1per" class="c1per">Percentage%</label>
-              <input type="text" id="c1per" />
-            </div>
+              <label for="s1sgpa" class="s1sgpa">SGPA</label>
+              <input type="text" id="s1sgpa" class="border border-dark" disabled />
+            </div><br><br></form>
           </div>
         </center>
       </div>

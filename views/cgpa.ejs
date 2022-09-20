@@ -5,6 +5,7 @@
     <div class="container">
       <div class="cgpa_calculator align-items-center">
         <center>
+          <form action="">
           <i
             ><h3 class="bg-warning p-2 text-dark bg-opacity-10">
               Enter 0 for semesters not completed
@@ -25,7 +26,7 @@
               </svg></h3></i
           ><br />
           <label for="c1s1" class="c1s1">SEM 1</label>
-          <input type="number" id="c1s1" /><br /><br />
+          <input type="number"  id="c1s1"   /><br /><br />
           <label for="c1s2" class="c1s2">SEM 2</label>
           <input type="number" id="c1s2" /><br /><br />
           <label for="c1s3" class="c1s3">SEM 3</label>
@@ -40,15 +41,14 @@
           <input type="number" id="c1s7" /><br /><br />
           <label for="c1s8" class="c1s8">SEM 8</label>
           <input type="number" id="c1s8" /><br /><br />
-          <button class="btn btn-sm btn-outline-primary">Calculate</button>
+          <button class="btn btn-sm btn-outline-primary"  onclick="cal_cgpa()">Calculate</button>
           <input
             type="reset"
             class="btn btn-sm btn-outline-danger"
           /><br /><br />
           <label for="c1cgpa" class="c1cgpa">CGPA</label>
-          <input type="text" id="c1cgpa" />
-          <label for="c1per" class="c1per">Percentage%</label>
-          <input type="text" id="c1per" />
+          <input type="text" id="c1cgpa" class="border border-dark" disabled/><br><br></form>
+       
         </center>
       </div>
     </div>
