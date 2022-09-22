@@ -5,7 +5,7 @@
   <body>
     <div class="container">
       <div class="cgpa_calculator align-items-center">
-        <center><form action="">
+        <center>
           <h2><i><%= sem%></i></h2>
           <br />
           <%var x=0; subjects.forEach(sub=>{%><label for="<%=++x%>"
@@ -19,15 +19,14 @@
           >
             Calculate
           </button>
-          <input
-            type="reset"
-            class="btn btn-sm btn-outline-danger"
-          /><br /><br />
+          <button
+            class="btn btn-sm btn-outline-danger" onclick="reset_sgpa()"
+          >reset</button><br /><br />
           <div class="row justify-content-center">
             <div class="col-md-3 mt-2">
               <label for="s1sgpa" class="s1sgpa">SGPA</label>
               <input type="text" id="s1sgpa" class="border border-dark" disabled />
-            </div><br><br></form>
+            </div><br><br>
           </div>
         </center>
       </div>

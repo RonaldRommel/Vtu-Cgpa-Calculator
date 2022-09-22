@@ -132,14 +132,14 @@ app.get("/semester/sem7", (req, res) => {
     "18**74*",
     "18**75*",
     "18**L76",
-    "18**L77",
+    "18**P77",
   ];
   res.cookie("subjects", ["7th Semester", subs], { httpOnly: true });
   res.redirect("/semester/marks");
 });
 
 app.get("/semester/sem8", (req, res) => {
-  var subs = ["18**81", "18**82*", "18**P83", "18**S84", "18**185"];
+  var subs = ["18**81", "18**82*", "18**P83", "18**S84", "18**I85"];
   res.cookie("subjects", ["8th Semester", subs], { httpOnly: true });
   res.redirect("/semester/marks");
 });
