@@ -8,7 +8,7 @@
         <center>
           <br><br>
           <!-- class="bg-warning p-2 text-dark bg-opacity-10" -->
-          <form action="">
+         
           <i
             ><h3 >
               Enter 0 for semesters not completed
@@ -45,12 +45,11 @@
           <label for="c1s8" class="c1s8">SEM 8</label>
           <input type="number" id="c1s8" /><br /><br />
           <button class="btn btn-sm btn-outline-primary"  onclick="cal_cgpa()">Calculate</button>
-          <input
-            type="reset"
-            class="btn btn-sm btn-outline-danger"
-          /><br /><br />
+          <button
+            class="btn btn-sm btn-outline-danger" onclick="reset_cgpa()"
+          >reset</button><br /><br />
           <label for="c1cgpa" class="c1cgpa">CGPA</label>
-          <input type="text" id="c1cgpa" class="border border-dark" disabled/><br><br></form>
+          <input type="text" id="c1cgpa" class="border border-dark" disabled/><br><br>
        
         </center>
       </div>

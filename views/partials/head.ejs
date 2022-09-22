@@ -42,7 +42,7 @@
       var x8=grade_point(Number(document.getElementById("8").value))*1
       var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/20
       var y=document.getElementById("s1sgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
     }
     function first_second_chem()
     {
@@ -56,7 +56,7 @@
       var x8=grade_point(Number(document.getElementById("8").value))*1
       var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/20
       var y=document.getElementById("s1sgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
     }
     function third_fourth()
     {
@@ -71,7 +71,7 @@
       var x9=grade_point(Number(document.getElementById("9").value))*1
       var avg=(x1+x2+x3+x4+x5+x6+x7+x8+x9)/24
       var y=document.getElementById("s1sgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
     }
     function fifth()
     {
@@ -86,7 +86,7 @@
       var x9=grade_point(Number(document.getElementById("9").value))*1
       var avg=(x1+x2+x3+x4+x5+x6+x7+x8+x9)/25
       var y=document.getElementById("s1sgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
     }
     function sixth()
     {
@@ -100,7 +100,7 @@
       var x8=grade_point(Number(document.getElementById("8").value))*2
       var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/24
       var y=document.getElementById("s1sgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
     }
     function seventh()
     {
@@ -113,7 +113,7 @@
       var x7=grade_point(Number(document.getElementById("7").value))*1
       var avg=(x1+x2+x3+x4+x5+x6+x7)/20
       var y=document.getElementById("s1sgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
     }
     function eigth()
     {
@@ -124,7 +124,7 @@
       var x5=grade_point(Number(document.getElementById("5").value))*3
       var avg=(x1+x2+x3+x4+x5)/18
       var y=document.getElementById("s1sgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
     }
     function grade_point(num)
     {
@@ -178,7 +178,32 @@
         total-=18
       var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/total
       var y=document.getElementById("c1cgpa")
-      y.value=avg
+      y.value=avg.toFixed(2)
+    }
+    function reset_cgpa()
+    {
+      document.getElementById("c1s1").value=" "
+      document.getElementById("c1s2").value=" "
+      document.getElementById("c1s3").value=" "
+      document.getElementById("c1s4").value=" "
+      document.getElementById("c1s5").value=" "
+      document.getElementById("c1s6").value=" "
+      document.getElementById("c1s7").value=" "
+      document.getElementById("c1s8").value=" "
+      document.getElementById("c1cgpa").value=" "
+    }
+    function reset_sgpa()
+    {
+      document.getElementById("1").value=" "
+      document.getElementById("2").value=" "
+      document.getElementById("3").value=" "
+      document.getElementById("4").value=" "
+      document.getElementById("5").value=" "
+      document.getElementById("6").value=" "
+      document.getElementById("7").value=" "
+      document.getElementById("8").value=" "
+      document.getElementById("9").value=" "
+      document.getElementById("s1sgpa").value=" "
     }
   </script>
 </head>
