@@ -1,7 +1,16 @@
+input {
+  width: 25%;
+  height: 40px;
+}
+input:disabled {
+  background-color: white;
+}
+
 /*--------------------------------------------------------- HOMEPAGE ------------------------------------------------------------------*/
 body {
-  background-image: url(background.jpg);
-  
+  /* background-image: url(background.jpg); */
+  background-image: url("b3.jpg");
+  /* background-color: #99bbff; */
 }
 .sgpa_cgpa_link {
   color: purple;
@@ -24,13 +33,16 @@ a:link {
   text-decoration: none;
 }
 
+.btn-lg {
+  width: 300px;
+}
+
 /*--------------------------------------------------------------------- SEMESTER --------------------------------------------------*/
 .semester_list {
   /* border:2px solid black; */
   text-align: center;
   margin: 50px 150px 0 150px;
   padding: 25px 0 25px 0;
- 
 }
 
 .list-group-item {
@@ -44,29 +56,36 @@ a:link {
   text-align: center;
   margin: 50px 150px 0 150px;
   padding: 25px 0 25px 0;
- 
 }
 
-.s1s1:hover,.s1s2:hover,.s1s3:hover,.s1s4:hover,.s1s5:hover,.s1s6:hover,.s1s7:hover,.s1s8:hover,.s1sgpa:hover,
-.s1per:hover{
-color:rgb(230, 93, 164);
+.s1s1:hover,
+.s1s2:hover,
+.s1s3:hover,
+.s1s4:hover,
+.s1s5:hover,
+.s1s6:hover,
+.s1s7:hover,
+.s1s8:hover,
+.s1sgpa:hover,
+.s1per:hover {
+  color: rgb(230, 93, 164);
 }
 
 /*--------------------------------------------------------------------- SIGNUP --------------------------------------------------*/
 
-.signup_page,.login_page {
-  
+.signup_page,
+.login_page {
   text-align: center;
   margin: 50px 150px 0 150px;
   padding: 25px 0 25px 0;
- 
 }
-.signup_header:hover,.login_header:hover{
-color:rgb(89, 113, 167);
+.signup_header:hover,
+.login_header:hover {
+  color: rgb(89, 113, 167);
 }
 
 /*--------------------------------------------------------------------- NAVBAR --------------------------------------------------*/
-
+/* 
 #home_link{
   background-color: rgb(103, 75, 75);
-}
+} */

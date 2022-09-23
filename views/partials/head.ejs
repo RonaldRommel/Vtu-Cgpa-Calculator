@@ -8,202 +8,188 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
   />
   <link rel="stylesheet" href="/styles.css" />
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
-    function cal_sgpa(semester) 
-    {
-      switch (semester) 
-      {
-        case "1st and 2nd sem (physics group)": first_second_phy();
-                                                break;
-        case "1st and 2nd sem (chemistry group)": first_second_chem();
-                                                  break;
-        case "3rd and 4th Semester": third_fourth();
-                                     break;
-        case "5th Semester" : fifth();
-                              break;     
-        case "6th Semester" : sixth();
-                              break;
-        case "7th Semester" : seventh();
-                              break;
-        case "8th Semester" : eigth();
-                              break;                                               
+    function cal_sgpa(semester) {
+      switch (semester) {
+        case "1st and 2nd sem (physics group)":
+          first_second_phy();
+          break;
+        case "1st and 2nd sem (chemistry group)":
+          first_second_chem();
+          break;
+        case "3rd and 4th Semester":
+          third_fourth();
+          break;
+        case "5th Semester":
+          fifth();
+          break;
+        case "6th Semester":
+          sixth();
+          break;
+        case "7th Semester":
+          seventh();
+          break;
+        case "8th Semester":
+          eigth();
+          break;
       }
     }
-    function first_second_phy()
-    {
-      var x1=grade_point(Number(document.getElementById("1").value))*4
-      var x2=grade_point(Number(document.getElementById("2").value))*4
-      var x3=grade_point(Number(document.getElementById("3").value))*3
-      var x4=grade_point(Number(document.getElementById("4").value))*3
-      var x5=grade_point(Number(document.getElementById("5").value))*3
-      var x6=grade_point(Number(document.getElementById("6").value))*1
-      var x7=grade_point(Number(document.getElementById("7").value))*1
-      var x8=grade_point(Number(document.getElementById("8").value))*1
-      var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/20
-      var y=document.getElementById("s1sgpa")
-      y.value=avg.toFixed(2)
+    function first_second_phy() {
+      var x1 = grade_point(Number(document.getElementById("1").value)) * 4;
+      var x2 = grade_point(Number(document.getElementById("2").value)) * 4;
+      var x3 = grade_point(Number(document.getElementById("3").value)) * 3;
+      var x4 = grade_point(Number(document.getElementById("4").value)) * 3;
+      var x5 = grade_point(Number(document.getElementById("5").value)) * 3;
+      var x6 = grade_point(Number(document.getElementById("6").value)) * 1;
+      var x7 = grade_point(Number(document.getElementById("7").value)) * 1;
+      var x8 = grade_point(Number(document.getElementById("8").value)) * 1;
+      var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8) / 20;
+      var y = document.getElementById("s1sgpa");
+      y.value = avg.toFixed(2);
     }
-    function first_second_chem()
-    {
-      var x1=grade_point(Number(document.getElementById("1").value))*4
-      var x2=grade_point(Number(document.getElementById("2").value))*4
-      var x3=grade_point(Number(document.getElementById("3").value))*3
-      var x4=grade_point(Number(document.getElementById("4").value))*3
-      var x5=grade_point(Number(document.getElementById("5").value))*3
-      var x6=grade_point(Number(document.getElementById("6").value))*1
-      var x7=grade_point(Number(document.getElementById("7").value))*1
-      var x8=grade_point(Number(document.getElementById("8").value))*1
-      var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/20
-      var y=document.getElementById("s1sgpa")
-      y.value=avg.toFixed(2)
+    function first_second_chem() {
+      var x1 = grade_point(Number(document.getElementById("1").value)) * 4;
+      var x2 = grade_point(Number(document.getElementById("2").value)) * 4;
+      var x3 = grade_point(Number(document.getElementById("3").value)) * 3;
+      var x4 = grade_point(Number(document.getElementById("4").value)) * 3;
+      var x5 = grade_point(Number(document.getElementById("5").value)) * 3;
+      var x6 = grade_point(Number(document.getElementById("6").value)) * 1;
+      var x7 = grade_point(Number(document.getElementById("7").value)) * 1;
+      var x8 = grade_point(Number(document.getElementById("8").value)) * 1;
+      var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8) / 20;
+      var y = document.getElementById("s1sgpa");
+      y.value = avg.toFixed(2);
     }
-    function third_fourth()
-    {
-      var x1=grade_point(Number(document.getElementById("1").value))*3
-      var x2=grade_point(Number(document.getElementById("2").value))*4
-      var x3=grade_point(Number(document.getElementById("3").value))*3
-      var x4=grade_point(Number(document.getElementById("4").value))*3
-      var x5=grade_point(Number(document.getElementById("5").value))*3
-      var x6=grade_point(Number(document.getElementById("6").value))*3
-      var x7=grade_point(Number(document.getElementById("7").value))*2
-      var x8=grade_point(Number(document.getElementById("8").value))*2
-      var x9=grade_point(Number(document.getElementById("9").value))*1
-      var avg=(x1+x2+x3+x4+x5+x6+x7+x8+x9)/24
-      var y=document.getElementById("s1sgpa")
-      y.value=avg.toFixed(2)
+    function third_fourth() {
+      var x1 = grade_point(Number(document.getElementById("1").value)) * 3;
+      var x2 = grade_point(Number(document.getElementById("2").value)) * 4;
+      var x3 = grade_point(Number(document.getElementById("3").value)) * 3;
+      var x4 = grade_point(Number(document.getElementById("4").value)) * 3;
+      var x5 = grade_point(Number(document.getElementById("5").value)) * 3;
+      var x6 = grade_point(Number(document.getElementById("6").value)) * 3;
+      var x7 = grade_point(Number(document.getElementById("7").value)) * 2;
+      var x8 = grade_point(Number(document.getElementById("8").value)) * 2;
+      var x9 = grade_point(Number(document.getElementById("9").value)) * 1;
+      var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9) / 24;
+      var y = document.getElementById("s1sgpa");
+      y.value = avg.toFixed(2);
     }
-    function fifth()
-    {
-      var x1=grade_point(Number(document.getElementById("1").value))*3
-      var x2=grade_point(Number(document.getElementById("2").value))*4
-      var x3=grade_point(Number(document.getElementById("3").value))*4
-      var x4=grade_point(Number(document.getElementById("4").value))*3
-      var x5=grade_point(Number(document.getElementById("5").value))*3
-      var x6=grade_point(Number(document.getElementById("6").value))*3
-      var x7=grade_point(Number(document.getElementById("7").value))*2
-      var x8=grade_point(Number(document.getElementById("8").value))*2
-      var x9=grade_point(Number(document.getElementById("9").value))*1
-      var avg=(x1+x2+x3+x4+x5+x6+x7+x8+x9)/25
-      var y=document.getElementById("s1sgpa")
-      y.value=avg.toFixed(2)
+    function fifth() {
+      var x1 = grade_point(Number(document.getElementById("1").value)) * 3;
+      var x2 = grade_point(Number(document.getElementById("2").value)) * 4;
+      var x3 = grade_point(Number(document.getElementById("3").value)) * 4;
+      var x4 = grade_point(Number(document.getElementById("4").value)) * 3;
+      var x5 = grade_point(Number(document.getElementById("5").value)) * 3;
+      var x6 = grade_point(Number(document.getElementById("6").value)) * 3;
+      var x7 = grade_point(Number(document.getElementById("7").value)) * 2;
+      var x8 = grade_point(Number(document.getElementById("8").value)) * 2;
+      var x9 = grade_point(Number(document.getElementById("9").value)) * 1;
+      var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8 + x9) / 25;
+      var y = document.getElementById("s1sgpa");
+      y.value = avg.toFixed(2);
     }
-    function sixth()
-    {
-      var x1=grade_point(Number(document.getElementById("1").value))*4
-      var x2=grade_point(Number(document.getElementById("2").value))*4
-      var x3=grade_point(Number(document.getElementById("3").value))*4
-      var x4=grade_point(Number(document.getElementById("4").value))*3
-      var x5=grade_point(Number(document.getElementById("5").value))*3
-      var x6=grade_point(Number(document.getElementById("6").value))*2
-      var x7=grade_point(Number(document.getElementById("7").value))*2
-      var x8=grade_point(Number(document.getElementById("8").value))*2
-      var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/24
-      var y=document.getElementById("s1sgpa")
-      y.value=avg.toFixed(2)
+    function sixth() {
+      var x1 = grade_point(Number(document.getElementById("1").value)) * 4;
+      var x2 = grade_point(Number(document.getElementById("2").value)) * 4;
+      var x3 = grade_point(Number(document.getElementById("3").value)) * 4;
+      var x4 = grade_point(Number(document.getElementById("4").value)) * 3;
+      var x5 = grade_point(Number(document.getElementById("5").value)) * 3;
+      var x6 = grade_point(Number(document.getElementById("6").value)) * 2;
+      var x7 = grade_point(Number(document.getElementById("7").value)) * 2;
+      var x8 = grade_point(Number(document.getElementById("8").value)) * 2;
+      var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8) / 24;
+      var y = document.getElementById("s1sgpa");
+      y.value = avg.toFixed(2);
     }
-    function seventh()
-    {
-      var x1=grade_point(Number(document.getElementById("1").value))*4
-      var x2=grade_point(Number(document.getElementById("2").value))*4
-      var x3=grade_point(Number(document.getElementById("3").value))*3
-      var x4=grade_point(Number(document.getElementById("4").value))*3
-      var x5=grade_point(Number(document.getElementById("5").value))*3
-      var x6=grade_point(Number(document.getElementById("6").value))*2
-      var x7=grade_point(Number(document.getElementById("7").value))*1
-      var avg=(x1+x2+x3+x4+x5+x6+x7)/20
-      var y=document.getElementById("s1sgpa")
-      y.value=avg.toFixed(2)
+    function seventh() {
+      var x1 = grade_point(Number(document.getElementById("1").value)) * 4;
+      var x2 = grade_point(Number(document.getElementById("2").value)) * 4;
+      var x3 = grade_point(Number(document.getElementById("3").value)) * 3;
+      var x4 = grade_point(Number(document.getElementById("4").value)) * 3;
+      var x5 = grade_point(Number(document.getElementById("5").value)) * 3;
+      var x6 = grade_point(Number(document.getElementById("6").value)) * 2;
+      var x7 = grade_point(Number(document.getElementById("7").value)) * 1;
+      var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7) / 20;
+      var y = document.getElementById("s1sgpa");
+      y.value = avg.toFixed(2);
     }
-    function eigth()
-    {
-      var x1=grade_point(Number(document.getElementById("1").value))*3
-      var x2=grade_point(Number(document.getElementById("2").value))*3
-      var x3=grade_point(Number(document.getElementById("3").value))*8
-      var x4=grade_point(Number(document.getElementById("4").value))*1
-      var x5=grade_point(Number(document.getElementById("5").value))*3
-      var avg=(x1+x2+x3+x4+x5)/18
-      var y=document.getElementById("s1sgpa")
-      y.value=avg.toFixed(2)
+    function eigth() {
+      var x1 = grade_point(Number(document.getElementById("1").value)) * 3;
+      var x2 = grade_point(Number(document.getElementById("2").value)) * 3;
+      var x3 = grade_point(Number(document.getElementById("3").value)) * 8;
+      var x4 = grade_point(Number(document.getElementById("4").value)) * 1;
+      var x5 = grade_point(Number(document.getElementById("5").value)) * 3;
+      var avg = (x1 + x2 + x3 + x4 + x5) / 18;
+      var y = document.getElementById("s1sgpa");
+      y.value = avg.toFixed(2);
     }
-    function grade_point(num)
-    {
-      if(num>=90 && num<=100)
-        return 10;
-      else if(num>=80 && num<=90)
-        return 9;
-      else if(num>=70 && num<=80)
-        return 8;
-      else if(num>=60 && num<=70)
-        return 7;
-      else if(num>=50 && num<=60)
-        return 6;
-      else if(num>=40 && num<=50)
-        return 5;
-      else if(num>=30 && num<=40)
-        return 4;
-      else if(num>=20 && num<=30)
-        return 3;
-      else if(num>=10 && num<=20)
-        return 2;
-      else 
-        return 1;
+    function grade_point(num) {
+      if (num >= 90 && num <= 100) return 10;
+      else if (num >= 80 && num <= 90) return 9;
+      else if (num >= 70 && num <= 80) return 8;
+      else if (num >= 60 && num <= 70) return 7;
+      else if (num >= 50 && num <= 60) return 6;
+      else if (num >= 40 && num <= 50) return 5;
+      else if (num >= 30 && num <= 40) return 4;
+      else if (num >= 20 && num <= 30) return 3;
+      else if (num >= 10 && num <= 20) return 2;
+      else return 1;
     }
-    function cal_cgpa()
-    {
-      var x1=Number(document.getElementById("c1s1").value)*20
-      var x2=Number(document.getElementById("c1s2").value)*20
-      var x3=Number(document.getElementById("c1s3").value)*24
-      var x4=Number(document.getElementById("c1s4").value)*24
-      var x5=Number(document.getElementById("c1s5").value)*25
-      var x6=Number(document.getElementById("c1s6").value)*24
-      var x7=Number(document.getElementById("c1s7").value)*20
-      var x8=Number(document.getElementById("c1s8").value)*18
-      var total=175
-      if(x1==0)
-        total-=20
-      if(x2==0)
-        total-=20
-      if(x3==0)
-        total-=24
-      if(x4==0)
-        total-=24
-      if(x5==0)
-        total-=25
-      if(x6==0)
-        total-=24
-      if(x7==0)
-        total-=20
-      if(x8==0)
-        total-=18
-      var avg=(x1+x2+x3+x4+x5+x6+x7+x8)/total
-      var y=document.getElementById("c1cgpa")
-      y.value=avg.toFixed(2)
+    function cal_cgpa() {
+      var x1 = Number(document.getElementById("c1s1").value) * 20;
+      var x2 = Number(document.getElementById("c1s2").value) * 20;
+      var x3 = Number(document.getElementById("c1s3").value) * 24;
+      var x4 = Number(document.getElementById("c1s4").value) * 24;
+      var x5 = Number(document.getElementById("c1s5").value) * 25;
+      var x6 = Number(document.getElementById("c1s6").value) * 24;
+      var x7 = Number(document.getElementById("c1s7").value) * 20;
+      var x8 = Number(document.getElementById("c1s8").value) * 18;
+      var total = 175;
+      if (x1 == 0) total -= 20;
+      if (x2 == 0) total -= 20;
+      if (x3 == 0) total -= 24;
+      if (x4 == 0) total -= 24;
+      if (x5 == 0) total -= 25;
+      if (x6 == 0) total -= 24;
+      if (x7 == 0) total -= 20;
+      if (x8 == 0) total -= 18;
+      var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8) / total;
+      var y = document.getElementById("c1cgpa");
+      y.value = avg.toFixed(2);
     }
-    function reset_cgpa()
-    {
-      document.getElementById("c1s1").value=" "
-      document.getElementById("c1s2").value=" "
-      document.getElementById("c1s3").value=" "
-      document.getElementById("c1s4").value=" "
-      document.getElementById("c1s5").value=" "
-      document.getElementById("c1s6").value=" "
-      document.getElementById("c1s7").value=" "
-      document.getElementById("c1s8").value=" "
-      document.getElementById("c1cgpa").value=" "
+    function reset_cgpa() {
+      document.getElementById("c1s1").value = " ";
+      document.getElementById("c1s2").value = " ";
+      document.getElementById("c1s3").value = " ";
+      document.getElementById("c1s4").value = " ";
+      document.getElementById("c1s5").value = " ";
+      document.getElementById("c1s6").value = " ";
+      document.getElementById("c1s7").value = " ";
+      document.getElementById("c1s8").value = " ";
+      document.getElementById("c1cgpa").value = " ";
     }
-    function reset_sgpa()
-    {
-      document.getElementById("1").value=" "
-      document.getElementById("2").value=" "
-      document.getElementById("3").value=" "
-      document.getElementById("4").value=" "
-      document.getElementById("5").value=" "
-      document.getElementById("6").value=" "
-      document.getElementById("7").value=" "
-      document.getElementById("8").value=" "
-      document.getElementById("9").value=" "
-      document.getElementById("s1sgpa").value=" "
+    function reset_sgpa() {
+      for (var i = 0; i < 10; i++) {
+        if (document.body.contains(document.getElementById(i))) {
+          document.getElementById(i).value = "";
+        }
+      }
+      // console.log(
+      //   "Exists : ",
+      //   document.body.contains(document.getElementById("9"))
+      // );
+      // document.getElementById("1").value = " ";
+      // document.getElementById("2").value = " ";
+      // document.getElementById("3").value = " ";
+      // document.getElementById("4").value = " ";
+      // document.getElementById("5").value = " ";
+      // document.getElementById("6").value = " ";
+      // document.getElementById("7").value = " ";
+      // document.getElementById("8").value = " ";
+      document.getElementById("s1sgpa").value = " ";
     }
   </script>
 </head>
