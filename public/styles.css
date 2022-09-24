@@ -7,16 +7,20 @@ input:disabled {
 }
 
 /*--------------------------------------------------------- HOMEPAGE ------------------------------------------------------------------*/
-body {
-  /* background-image: url(background.jpg); */
-  background-image: url("b3.jpg");
-  /* background-color: #99bbff; */
+#body {
+ 
+  background-image: url("b11.jpg");
+
 }
 
 #vtu {
   /* font-family: Anton; */
   font-family: Archivo;
   font-weight: bold;
+}
+body{
+  background-image: url(b3.jpg);
+
 }
 
 .sgpa_cgpa_link {
