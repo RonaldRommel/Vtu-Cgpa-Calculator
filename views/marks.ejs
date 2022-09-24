@@ -7,18 +7,21 @@
         <center>
           <h2><i><%= sem%></i></h2>
           <br />
-          <%var x=0; subjects.forEach(sub=>{%><label for="<%=++x%>"
-            ><%=sub%></label
-          >
-          <input type="text" id="<%=x%>" max="100" min="0" /><br /><br /><% })
-          %>
+          <%var x=0; subjects.forEach(sub=>{%>
+          <div>
+            <label for="<%=++x%>"><%=sub%></label>
+            <input type="number" id="<%=x%>" max="100" min="0" />
+            <div class="error" id="err<%=x%>"></div>
+          </div>
+          <br />
+          <% }) %>
           <button
-            class="btn btn-sm btn-primary"
+            class="btn btn-sm btn-primary marks"
             onclick="cal_sgpa('<%= sem%>')"
           >
             Calculate
           </button>
-          <button class="btn btn-sm btn-danger" onclick="reset_sgpa()">
+          <button class="btn btn-sm btn-danger marks" onclick="reset_sgpa()">
             Reset</button
           ><br /><br />
           <div class="row justify-content-center">

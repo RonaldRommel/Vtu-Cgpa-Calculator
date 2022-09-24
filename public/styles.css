@@ -1,6 +1,6 @@
 input {
-  width: 25%;
-  height: 40px;
+  width: 150px;
+  height: 30px;
 }
 input:disabled {
   background-color: white;
@@ -12,6 +12,13 @@ body {
   background-image: url("b3.jpg");
   /* background-color: #99bbff; */
 }
+
+#vtu {
+  /* font-family: Anton; */
+  font-family: Archivo;
+  font-weight: bold;
+}
+
 .sgpa_cgpa_link {
   color: purple;
   text-align: center;
@@ -38,18 +45,32 @@ a:link {
 }
 
 /*--------------------------------------------------------------------- SEMESTER --------------------------------------------------*/
-.semester_list {
-  /* border:2px solid black; */
+.semester_head {
+  color: darkblue;
+  font-size: 35px;
   text-align: center;
-  margin: 50px 150px 0 150px;
-  padding: 25px 0 25px 0;
+  font-weight: 600;
 }
 
+.semester_list {
+  text-align: center;
+}
 .list-group-item {
   background-color: transparent;
   border: 0px;
+  font-weight: 500;
 }
 /*--------------------------------------------------------------------- MARKS --------------------------------------------------*/
+.marks {
+  width: 100px;
+}
+.error {
+  color: red;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  left: 40px;
+}
 
 .marks_list {
   /* border:2px solid black; */
@@ -85,7 +106,10 @@ a:link {
 }
 
 /*--------------------------------------------------------------------- NAVBAR --------------------------------------------------*/
-/* 
-#home_link{
-  background-color: rgb(103, 75, 75);
-} */
+
+.nav-link {
+  color: darkblue;
+  font-weight: 600;
+  font-family: "Dancing Script";
+  font-size: 25px;
+}

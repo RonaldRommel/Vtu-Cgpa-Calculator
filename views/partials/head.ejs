@@ -7,12 +7,22 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Dancing+Script"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Archivo"
+  />
   <link rel="stylesheet" href="/styles.css" />
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     function cal_sgpa(semester) {
+      if (check_sgpa() == 0) return;
+
       switch (semester) {
         case "1st and 2nd sem (physics group)":
           first_second_phy();
@@ -37,6 +47,56 @@
           break;
       }
     }
+
+    function check_sgpa() {
+      let c = 1;
+      for (var i = 0; i < 10; i++) {
+        var ele = document.getElementById(i);
+        var pat1 = /[a-zA-Z]/;
+        if (document.body.contains(ele)) {
+          var x = document.getElementById("err" + i);
+          if (ele.value == "" || ele.value.match(pat1)) {
+            x.textContent = "should contain only number";
+            ele.style.borderColor = "red";
+            c = 0;
+          } else if (ele.value < 0 || ele.value > 100) {
+            ele.style.borderColor = "red";
+            x.textContent = "marks between 0 and 100";
+            c = 0;
+          } else {
+            x.textContent = "";
+            ele.style.border = "revert";
+          }
+        }
+      }
+      return c;
+    }
+
+    function check_cgpa() {
+      let c = 1;
+      console.log("check sgpa");
+      for (var i = 1; i <= 8; i++) {
+        var ele = document.getElementById("c1s" + i);
+        var pat1 = /[a-zA-Z]/;
+        if (document.body.contains(ele)) {
+          var x = document.getElementById("err" + i);
+          if (ele.value == "" || ele.value.match(pat1)) {
+            x.textContent = "should contain 0";
+            ele.style.borderColor = "red";
+            c = 0;
+          } else if (ele.value < 0 || ele.value > 10) {
+            ele.style.borderColor = "red";
+            x.textContent = "sgpa between 0 and 10";
+            c = 0;
+          } else {
+            x.textContent = "";
+            ele.style.border = "revert";
+          }
+        }
+      }
+      return c;
+    }
+
     function first_second_phy() {
       var x1 = grade_point(Number(document.getElementById("1").value)) * 4;
       var x2 = grade_point(Number(document.getElementById("2").value)) * 4;
@@ -139,6 +199,9 @@
       else return 1;
     }
     function cal_cgpa() {
+      if (check_cgpa() == 0) {
+        return;
+      }
       var x1 = Number(document.getElementById("c1s1").value) * 20;
       var x2 = Number(document.getElementById("c1s2").value) * 20;
       var x3 = Number(document.getElementById("c1s3").value) * 24;
@@ -161,34 +224,33 @@
       y.value = avg.toFixed(2);
     }
     function reset_cgpa() {
-      document.getElementById("c1s1").value = " ";
-      document.getElementById("c1s2").value = " ";
-      document.getElementById("c1s3").value = " ";
-      document.getElementById("c1s4").value = " ";
-      document.getElementById("c1s5").value = " ";
-      document.getElementById("c1s6").value = " ";
-      document.getElementById("c1s7").value = " ";
-      document.getElementById("c1s8").value = " ";
-      document.getElementById("c1cgpa").value = " ";
+      for (var i = 1; i <= 8; i++) {
+        var ele = document.getElementById("c1s" + i);
+        ele.value = "";
+        document.getElementById("err" + i).textContent = "";
+        ele.style.border = "revert";
+      }
+
+      // document.getElementById("c1s1").value = "";
+      // document.getElementById("c1s2").value = "";
+      // document.getElementById("c1s3").value = "";
+      // document.getElementById("c1s4").value = "";
+      // document.getElementById("c1s5").value = "";
+      // document.getElementById("c1s6").value = "";
+      // document.getElementById("c1s7").value = "";
+      // document.getElementById("c1s8").value = "";
+      // document.getElementById("c1cgpa").value = "";
+      // document.getElementById("s1sgpa").value = " ";
     }
     function reset_sgpa() {
       for (var i = 0; i < 10; i++) {
-        if (document.body.contains(document.getElementById(i))) {
-          document.getElementById(i).value = "";
+        var ele = document.getElementById(i);
+        if (document.body.contains(ele)) {
+          ele.value = "";
+          document.getElementById("err" + i).textContent = "";
+          ele.style.border = "revert";
         }
       }
-      // console.log(
-      //   "Exists : ",
-      //   document.body.contains(document.getElementById("9"))
-      // );
-      // document.getElementById("1").value = " ";
-      // document.getElementById("2").value = " ";
-      // document.getElementById("3").value = " ";
-      // document.getElementById("4").value = " ";
-      // document.getElementById("5").value = " ";
-      // document.getElementById("6").value = " ";
-      // document.getElementById("7").value = " ";
-      // document.getElementById("8").value = " ";
       document.getElementById("s1sgpa").value = " ";
     }
   </script>
