@@ -199,6 +199,8 @@
       else return 1;
     }
     function cal_cgpa() {
+      var y = document.getElementById("c1cgpa");
+      y.value = "";
       if (check_cgpa() == 0) {
         return;
       }
@@ -220,7 +222,7 @@
       if (x7 == 0) total -= 20;
       if (x8 == 0) total -= 18;
       var avg = (x1 + x2 + x3 + x4 + x5 + x6 + x7 + x8) / total;
-      var y = document.getElementById("c1cgpa");
+
       y.value = avg.toFixed(2);
     }
     function reset_cgpa() {
