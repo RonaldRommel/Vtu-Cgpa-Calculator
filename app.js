@@ -8,7 +8,7 @@ var cookieParser = require("cookie-parser");
 // require("dotenv").config();
 
 app.set("view engine", "ejs");
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 console.log("listening on port 3000 ");
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
