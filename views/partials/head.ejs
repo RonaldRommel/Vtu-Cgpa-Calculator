@@ -48,18 +48,27 @@
       }
     }
 
-    function check_sgpa() {
+    function check_sgpa()
+     {
       let c = 1;
-      for (var i = 0; i < 10; i++) {
+      for (var i = 0; i < 10; i++)
+       {
         var ele = document.getElementById(i);
         var pat1 = /[a-zA-Z]/;
-        if (document.body.contains(ele)) {
+        //  if (ele.value == "")
+        //   ele.value=0
+        if (document.body.contains(ele))
+         {
           var x = document.getElementById("err" + i);
-          if (ele.value == "" || ele.value.match(pat1)) {
-            x.textContent = "should contain only number";
+         
+          if (ele.value == "" || ele.value.match(pat1)) 
+          {
+            x.textContent = "should contain a number";
             ele.style.borderColor = "red";
             c = 0;
-          } else if (ele.value < 0 || ele.value > 100) {
+          }
+          
+          else if (ele.value < 0 || ele.value > 100) {
             ele.style.borderColor = "red";
             x.textContent = "marks between 0 and 100";
             c = 0;
@@ -81,12 +90,12 @@
         if (document.body.contains(ele)) {
           var x = document.getElementById("err" + i);
           if (ele.value == "" || ele.value.match(pat1)) {
-            x.textContent = "should contain 0";
+            x.textContent = "should contain a number";
             ele.style.borderColor = "red";
             c = 0;
           } else if (ele.value < 0 || ele.value > 10) {
             ele.style.borderColor = "red";
-            x.textContent = "sgpa between 0 and 10";
+            x.textContent = "cgpa between 0 and 10";
             c = 0;
           } else {
             x.textContent = "";
